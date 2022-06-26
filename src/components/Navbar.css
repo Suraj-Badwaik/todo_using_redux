@@ -1,0 +1,28 @@
+.Main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main a{
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+    font-size: 20px;
+}
+
+.Main div button{
+    border: none;
+    background: none;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: rgb(91, 91, 91);
+}
+
+.Main div button:hover{
+    border: 1px solid rgb(151, 150, 150);
+    background-color: rgb(219, 234, 246);
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 10px;
+}

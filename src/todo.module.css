@@ -1,0 +1,33 @@
+h1{
+text-align: center;
+}
+
+.container{
+    border: 2px solid red;
+    width: 30%;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+.inputDIv{
+    display: flex;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+.inputDIv input{
+    width: 90%;
+    border: none;
+}
+.inputDIv input:focus{
+   outline: none;
+}
+.inputDIv button{
+    width: 10%;
+    border: none;
+    background-color: white;
+}
+.todoList{
+    display: flex;
+}
