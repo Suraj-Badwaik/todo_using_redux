@@ -3,16 +3,19 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./store/store";
-import axios from 'axios';
+import { Persistor, store } from "./store/store";
+import axios from "axios";
+import { PersistGate } from "redux-persist/integration/react";
 
-axios.defaults.headers.post["Content-Type"]="application/json"
+axios.defaults.headers.post["Content-Type"] = "application/json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <App />
+      <PersistGate loading={null} persistor={Persistor}>
+        <App />
+      </PersistGate>
     </Provider>
   </BrowserRouter>
 );
