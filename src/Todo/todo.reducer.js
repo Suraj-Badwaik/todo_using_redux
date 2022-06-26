@@ -13,8 +13,10 @@ import {
   TOGGLE_TODO_SUCCESS,
 } from "./todo.action.type";
 
+import {loadData, savedData} from "../utils/localStorage"
+
 let initialState = {
-  todos: [],
+  todos: loadData('todos') || [],
   isLoading: false,
   isError: false,
 };
@@ -32,6 +34,7 @@ export const todoReducer = (state = initialState, { type, payload }) => {
       };
     }
     case GET_TODO_SUCCESS: {
+      savedData('todos', payload)
       return {
         ...state,
         todos: payload,

@@ -4,6 +4,11 @@
       "value": "buy food",
       "isCompleted": false,
       "id": 3
+    },
+    {
+      "value": "buy milk",
+      "isCompleted": false,
+      "id": 4
     }
   ]
 }
